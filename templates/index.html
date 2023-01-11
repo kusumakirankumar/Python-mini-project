@@ -1,0 +1,22 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      /* Make the background color black */
+      body {
+        background-color: black;
+      }
+      /* Make the image responsive */
+      img {
+        max-width: 5000%;
+        height: auto;
+        padding-left: 450px;
+        padding-top: 150px;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="{{ url_for('serve_static', path=image) }}" alt="random image">
+  </body>
+</html>
